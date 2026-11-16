@@ -4,6 +4,8 @@
 // $MAKEFUN_OUTPUT_DIR/html.json (default /output): a JSON array of the HTML strings, one per case,
 // in the cases' order. This entry keeps the driver and the output contract of the baseline and
 // replaces only parse.js - a faster module whose parse(markdown) returns the same string marked does.
+// Re-authored this session: the driver and the output contract are unchanged from the baseline; the
+// fast path lives entirely in parse.js.
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
